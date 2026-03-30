@@ -35,10 +35,13 @@ These datasets complement each other by combining movie features that the other 
 ## Objectives
 
 The main questions we aim to answer include:
-
-* Do higher-budget movies generate more revenue?
-* Do certain genres (like Action) perform better financially?
-* Is popularity actually related to better ratings?
-* What factors are most predictive of a movie’s success?
-
+1. Production Efficiency (Chi-Square)
+  Type: Chi-Squared Test of Independence
+  Process: We will categorize movies into "High Budget" vs. "Low Budget" (using the median) and "Flop" vs. "Success" (Revenue < Budget vs. Revenue > Budget).This test answers the question, "Does spending more money statistically decrease your risk of failing, or are low-budget movies actually safer bets?
+2. Artistic Effects: Director-Writer Overlap 
+  Type: Comparison of Means (Two-Sample t-test)
+  Process: We will create two groups: Group A (Movies where the Director is also a Writer) and Group B (Movies where they are different people). We then compare their Average Ratings.This test answers: "Does a singular idea lead to a statistically significant increase in movie quality, or is it better to have specialists?"
+3. Market Analysis: ANOVA (3 Genres vs. Box Office Revenue)
+  Type: Analysis of Variance (Multiple Group Comparison)
+  Process: We take the big three distinct genre buckets (e.g., Action, Comedy, and Drama) and compare their Worldwide Revenue.This test answers: "Is there a premier genre that consistently outperforms the others, or is the financial difference between genres just a matter of chance?
 ---
