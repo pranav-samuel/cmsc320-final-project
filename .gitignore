@@ -7,3 +7,6 @@ venv/
 
 # Editor settings
 .vscode/
+
+.env
+tmbd_api_data.csv
